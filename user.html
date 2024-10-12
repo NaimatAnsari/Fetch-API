@@ -3,11 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Information</title>
-  
+  <title>View Profile Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-container {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .profile-container h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .profile-container p {
+      color: #666;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .profile-details {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .profile-details p {
+      margin: 10px 0;
+    }
+
+    .profile-details strong {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .view-profile-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .view-profile-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .profile-container {
+        padding: 15px;
+      }
+
+      .profile-container h2 {
+        font-size: 24px;
+      }
+
+      .profile-details p {
+        font-size: 14px;
+      }
+
+      .view-profile-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <div class="profile-container">
+    <img src="https://via.placeholder.com/150" alt="User Image">
+    <h2>Naimat Ali</h2>
+    <p>Email: naimat@example.com</p>
+    <p>Designation : Aptech</p>
+
+    <div class="profile-details">
+      <p><strong>Address:</strong> Karachi, Pakistan</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Age:</strong> 25</p>
+      <p><strong>University:</strong> 25</p>
+      <p><strong>User Agent:</strong> 25</p>
+    </div>
+    <a href="#" class="view-profile-btn">Contact</a>
+  </div>
 
   <script src="app.js"></script>
 </body>

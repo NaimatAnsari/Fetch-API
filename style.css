@@ -57,6 +57,25 @@
     margin: 5px 0;
   }
 
+   .view-profile-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .view-profile-btn:hover {
+    background-color: #0056b3;
+  }
+
   @media (max-width: 768px) {
     .profile-container {
       flex-direction: column;
