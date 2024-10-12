@@ -76,6 +76,8 @@
     background-color: #0056b3;
   }
 
+
+  
   @media (max-width: 768px) {
     .profile-container {
       flex-direction: column;

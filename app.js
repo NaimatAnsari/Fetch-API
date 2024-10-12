@@ -89,6 +89,7 @@ fetchUserData(userId).then((mySingle) => {
     const detailCard = document.getElementById('DetailCard');
 
     const detail = `
+        <h4>User Profile Detail Card</h4>
         <img src="${mySingle.image}" alt="${mySingle.firstName}">
         <h2><b>${mySingle.firstName} ${mySingle.lastName}</b></h2>
         <p>Email: <b>${mySingle.email}</b></p>
